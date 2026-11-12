@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Page</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo-1.jpg">
+            <h2>
+                Contact Us
+            </h2>
+            <p>
+                Please Complete the Form to Contact Us
+            </p>
+        </header>
+    </div>
+    <main>
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+
+        <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" maxlength="30" required>
+        </div> 
+
+        <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" maxlength="30" required>
+        </div> 
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label>How would you prefer we contact you?</label>
+            <div class="contact-options">
+                <div class="radio-option">
+                <input type="radio" id="contactEmail" name="contactPreference" value="Email"required>
+                <label for="contactEmail">Email</label>
+                <input type="radio" id="contactText" name="contactPreference" value="Text"required>
+                <label for="contactEmail">Text</label>
+                <input type="radio" id="contactNoPreference" name="contactPreference" value="NoPreference"required>
+                <label for="contactEmail">No Preference</label>
+                </div>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </main>
+    <footer>
+        <p>&copy Elizabeth Hamman 2026</p>
+    </footer>
+</body>
+</html>
